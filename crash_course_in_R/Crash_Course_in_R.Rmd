@@ -2,9 +2,11 @@
 title: "A Crash Course for R"
 author: "Emmy Delekta"
 date: "`r Sys.Date()`"
+mainfont: Helvetica
 output:
-  pdf_document: default
-  html_document: default
+  html_document:
+  pdf_document:
+    latex_engine: xelatex
 ---
 
 
@@ -193,7 +195,7 @@ To import the file into R, you will need to know the specific file path on your 
 Note that the first row in my file has the column names, so I will set the argument 'header' to equal TRUE.
 
 ```{r}
-df <- read.csv(file = "~/Dev/Teaching R/data/ecology_tutorial.csv", header = TRUE)
+df <- read.csv(file = "~/Dev/Teaching R/crash_course_in_R/data/ecology_tutorial.csv", header = TRUE)
 
 # Look at the data set in console
 df
