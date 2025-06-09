@@ -9,7 +9,7 @@ output:
 
 
 ```{r, setup, include=FALSE}
-knitr::opts_knit$set(root.dir = '~/Dev/Teaching R')
+knitr::opts_knit$set(root.dir = '~/Dev/Teaching R/crash_course_in_R')
 ```
 
 # A Brief Introduction
