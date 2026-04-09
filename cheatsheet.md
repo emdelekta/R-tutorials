@@ -29,3 +29,18 @@ There are a lot of approaches you can do. I recommend whichever fits your goals.
     - `report::cite_packages(include_R = FALSE)` - output a list of packages in the current R environment.
   
 </details>
+
+<details>
+  <summary>
+    Setting up a GitHub Repo for an R Project
+  </summary>
+Assuming that you've done the hard part (aka. making the R Project) and gotten it connected to the repo...
+
+There's a package called [{gitignore}](https://docs.ropensci.org/gitignore/). 
+Run this code...
+
+```r
+gitignore::gi_fetch_templates("R", append_gitignore = TRUE)
+```
+
+</details>
