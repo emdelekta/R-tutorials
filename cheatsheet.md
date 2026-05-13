@@ -49,5 +49,10 @@ gitignore::gi_fetch_templates("R", append_gitignore = TRUE)
   <summary>
     Listing all package functions in RStudio
   </summary>
-In the console, use `help(package = "PACKAGENAME")` to pull up the package index in the Help tab.
+
+```r
+# Example
+help(package = dplyr)
+```
+  
 </details>
