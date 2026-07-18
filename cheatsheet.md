@@ -5,8 +5,35 @@ Have you ever needed to do very simple things in R or RStudio and you just... fo
 <summary>
   Check which version you're using
 </summary>
-  - R - `getRversion()`
-  - RStudio - `RStudio.Version()`
+  
+**1. R**
+```r
+getRversion()
+```
+
+**2. RStudio**
+
+```r
+RStudio.Version()
+```
+
+</details>
+
+<details>
+  <summary>
+    Update R
+  </summary>
+  
+*Note: This only works on Windows.*
+
+In R (not RStudio), use the package [`installr`](https://cran.r-project.org/web/packages/installr/index.html) to update R quick & easy!
+
+```r
+if (!require("installr")) install.packages("installr"); library(installr)
+updateR()
+```
+
+Then, follow the prompts.
 </details>
 
 <details>
@@ -14,14 +41,14 @@ Have you ever needed to do very simple things in R or RStudio and you just... fo
     Generate a citation
   </summary>
   
-**1. R**
+**1. For R**
     - `citation()`
     - `report::report_system()` - provides a nice sentence for you to use.
   
- **2. RStudio**
+ **2. For RStudio**
  `RStudio.Version()$citation`
   
-**3. R Packages**
+**3. For R Packages**
 There are a lot of approaches you can do. I recommend whichever fits your goals.
     - `grateful::cite_packages()` - [{grateful}](https://github.com/Pakillo/grateful) is a wonderful package for everything citations :) 
     - `devtools::session_info()`
